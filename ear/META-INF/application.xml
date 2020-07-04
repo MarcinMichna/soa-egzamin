@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_8.xsd"
+             version="8">
+
+    <module id="core-Web">
+        <web>
+            <web-uri>core_war.war</web-uri>
+            <context-root>coreWeb</context-root>
+        </web>
+    </module>
+    <module id="soap-Web">
+        <web>
+            <web-uri>soap_war.war</web-uri>
+            <context-root>soapWeb</context-root>
+        </web>
+    </module>
+    <module id="db-Web">
+        <web>
+            <web-uri>db_war.war</web-uri>
+            <context-root>dbWeb</context-root>
+        </web>
+    </module>
+</application>

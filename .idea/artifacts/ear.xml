@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="ear">
+    <output-path>$PROJECT_DIR$/out/artifacts/ear</output-path>
+    <root id="archive" name="ear.ear">
+      <element id="artifact" artifact-name="core:war" />
+      <element id="artifact" artifact-name="db:war" />
+      <element id="artifact" artifact-name="soap:war" />
+    </root>
+  </artifact>
+</component>
