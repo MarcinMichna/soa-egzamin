@@ -29,6 +29,10 @@ public class Task
         this.end = end;
     }
 
+    public Task()
+    {
+    }
+
     @Override
     public String toString()
     {
