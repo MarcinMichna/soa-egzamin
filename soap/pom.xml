@@ -6,10 +6,16 @@
         <artifactId>soa-egzamin</artifactId>
         <groupId>pl.michnamarcin</groupId>
         <version>1.0</version>
+
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>soap</artifactId>
+    <properties>
+        <java.version>11</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -17,6 +23,22 @@
             <artifactId>jaxws-api</artifactId>
             <version>2.2.6</version>
         </dependency>
+        <dependency>
+            <groupId>javax.jws</groupId>
+            <artifactId>jsr181-api</artifactId>
+            <version>1.0-MR1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>rt</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>pl.michnamarcin</groupId>
+            <artifactId>core</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
+
 
 </project>
