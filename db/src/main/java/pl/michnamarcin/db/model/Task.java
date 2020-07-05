@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.sql.Date;
+import java.sql.Timestamp;
 
 @Entity
 @Table(name = "task")
@@ -17,12 +18,12 @@ public class Task
     private String userData;
 
     @Column(name = "start_time")
-    private Date start;
+    private Timestamp start;
 
     @Column(name = "end_time")
-    private Date end;
+    private Timestamp end;
 
-    public Task(String userData, Date start, Date end)
+    public Task(String userData, Timestamp start, Timestamp end)
     {
         this.userData = userData;
         this.start = start;
@@ -64,22 +65,22 @@ public class Task
         this.userData = userData;
     }
 
-    public Date getStart()
+    public Timestamp getStart()
     {
         return start;
     }
 
-    public void setStart(Date start)
+    public void setStart(Timestamp start)
     {
         this.start = start;
     }
 
-    public Date getEnd()
+    public Timestamp getEnd()
     {
         return end;
     }
 
-    public void setEnd(Date end)
+    public void setEnd(Timestamp end)
     {
         this.end = end;
     }

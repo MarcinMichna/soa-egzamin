@@ -17,6 +17,24 @@
 
     <artifactId>ear</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>pl.michnamarcin</groupId>
+            <artifactId>db</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>pl.michnamarcin</groupId>
+            <artifactId>core</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>pl.michnamarcin</groupId>
+            <artifactId>soap</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+    </dependencies>
 
 
 </project>
